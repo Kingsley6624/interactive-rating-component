@@ -17,7 +17,7 @@ const RatingCard = ({ rate, setRate, setSubmitted, ratingTags }) => {
       <div className="flex justify-between">
         {ratingTags.map((tag, index) => (
           <button
-            className={`relative  text-[#959eacff] font-bold py-2 px-4 rounded-full active:bg-[#fb7413ff]   hover:text-[#252d37] before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-white/10 ${
+            className={`relative  text-[#959eacff] font-bold py-2 px-4 rounded-full active:bg-[#fb7413ff] active:text-[#252d37] hover:text-[#252d37] before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-white/10 ${
               rate === tag
                 ? "bg-[#fb7413ff] text-[#252d37] hover:bg-[#fb7413ff]"
                 : "bg-[#252d37] hover:bg-white"
